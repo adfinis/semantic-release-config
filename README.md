@@ -13,7 +13,13 @@ Currently, this config is only a slight modification of the default config:
 
 ## Installation
 
-Add the following to the `extends` property of your [semantic release configuration](https://semantic-release.gitbook.io/semantic-release/usage/configuration#configuration-file):
+Install the npm package
+
+```bash
+yarn add --dev @adfinis-sygroup/semantic-release-config
+```
+
+and add the following to the `extends` property of your [semantic release configuration](https://semantic-release.gitbook.io/semantic-release/usage/configuration#configuration-file):
 
 ```json
 {
