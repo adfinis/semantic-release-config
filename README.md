@@ -8,7 +8,7 @@ Sharable configuration for [semantic release](https://semantic-release.gitbook.i
 
 Currently, this config is only a slight modification of the default config:
 
-- Deploy from `next` branch instead of `master`
+- Deploy from `release` branch instead of `master`
 - Add [@semantic-release/git](https://github.com/semantic-release/git) plugin to publish updated `package.json` to repository after deployment
 
 ## Installation
