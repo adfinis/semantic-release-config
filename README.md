@@ -55,8 +55,23 @@ and adding the following section to `package.json`:
 
 ## CI Configuration
 
-- Add credentials for GitHub and npm as described [here](https://semantic-release.gitbook.io/semantic-release/usage/ci-configuration))
+- Add credentials for GitHub and npm as described [here](https://semantic-release.gitbook.io/semantic-release/usage/ci-configuration)
 - Run semantic-release in the deploy stage as described [here](https://semantic-release.gitbook.io/semantic-release/recipes/recipes/travis)
+
+Example:
+
+```yml
+jobs:
+  include:
+    - stage: release
+      if: branch = release and type = push
+      node_js: lts/*
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - yarn semantic-release --branch master
+```
 
 ## Commitizen
 
