@@ -70,7 +70,7 @@ jobs:
         provider: script
         skip_cleanup: true
         script:
-          - yarn semantic-release --branch master
+          - yarn semantic-release --branch release
 ```
 
 ## Commitizen
