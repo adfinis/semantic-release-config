@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/adfinis-sygroup/semantic-release-config/compare/v2.1.0...v2.1.1) (2019-05-20)
+
+
+### Bug Fixes
+
+* **deps:** update and pin dependencies ([d3957bf](https://github.com/adfinis-sygroup/semantic-release-config/commit/d3957bf))
+
 # [2.1.0](https://github.com/adfinis-sygroup/semantic-release-config/compare/v2.0.0...v2.1.0) (2019-05-18)
 
 
