@@ -1,3 +1,10 @@
+## [2.1.3](https://github.com/adfinis-sygroup/semantic-release-config/compare/v2.1.2...v2.1.3) (2019-06-18)
+
+
+### Bug Fixes
+
+* **deps:** update semantic-release monorepo ([fe4adc5](https://github.com/adfinis-sygroup/semantic-release-config/commit/fe4adc5))
+
 ## [2.1.2](https://github.com/adfinis-sygroup/semantic-release-config/compare/v2.1.1...v2.1.2) (2019-05-31)
 
 
