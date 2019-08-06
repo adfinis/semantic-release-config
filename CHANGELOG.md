@@ -1,3 +1,10 @@
+## [2.1.4](https://github.com/adfinis-sygroup/semantic-release-config/compare/v2.1.3...v2.1.4) (2019-08-06)
+
+
+### Bug Fixes
+
+* **release:** remove ci skipping from release message ([5739f49](https://github.com/adfinis-sygroup/semantic-release-config/commit/5739f49))
+
 ## [2.1.3](https://github.com/adfinis-sygroup/semantic-release-config/compare/v2.1.2...v2.1.3) (2019-06-18)
 
 
