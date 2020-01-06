@@ -7,7 +7,7 @@
   "author": "Christian Zosel <christian@zosel.ch>",
   "license": "MIT",
   "dependencies": {
-    "@commitlint/cli": "8.0.0",
+    "@commitlint/cli": "8.3.4",
     "@commitlint/config-conventional": "8.0.0",
     "@commitlint/travis-cli": "8.1.0",
     "@semantic-release/changelog": "3.0.4",
