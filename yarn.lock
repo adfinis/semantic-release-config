@@ -476,7 +476,23 @@
     read-pkg "^5.0.0"
     registry-auth-token "^3.3.1"
 
-"@semantic-release/release-notes-generator@7.2.1", "@semantic-release/release-notes-generator@^7.1.2":
+"@semantic-release/release-notes-generator@9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@semantic-release/release-notes-generator/-/release-notes-generator-9.0.1.tgz#732d285d103064f2a64f08a32031551ebb4f918b"
+  integrity sha512-bOoTiH6SiiR0x2uywSNR7uZcRDl22IpZhj+Q5Bn0v+98MFtOMhCxFhbrKQjhbYoZw7vps1mvMRmFkp/g6R9cvQ==
+  dependencies:
+    conventional-changelog-angular "^5.0.0"
+    conventional-changelog-writer "^4.0.0"
+    conventional-commits-filter "^2.0.0"
+    conventional-commits-parser "^3.0.0"
+    debug "^4.0.0"
+    get-stream "^5.0.0"
+    import-from "^3.0.0"
+    into-stream "^5.0.0"
+    lodash "^4.17.4"
+    read-pkg-up "^7.0.0"
+
+"@semantic-release/release-notes-generator@^7.1.2":
   version "7.2.1"
   resolved "https://registry.yarnpkg.com/@semantic-release/release-notes-generator/-/release-notes-generator-7.2.1.tgz#2c0c340e7be2a3d27c28cb869b6737a70f2862fe"
   integrity sha512-TdlYgYH6amhE80i9L9HPcTwYzk4Rma7qM1g7XJEEfip7dNXWgmrBeibN4DJmTg/qrUFDd4GD86lFDcYXNZDNow==
@@ -4632,7 +4648,7 @@ read-pkg-up@^6.0.0:
     read-pkg "^5.1.1"
     type-fest "^0.5.0"
 
-read-pkg-up@^7.0.1:
+read-pkg-up@^7.0.0, read-pkg-up@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/read-pkg-up/-/read-pkg-up-7.0.1.tgz#f3a6135758459733ae2b95638056e1854e7ef507"
   integrity sha512-zK0TB7Xd6JpCLmlLmufqykGE+/TlOePD6qKClNW7hHDKFh/J7/7gCWGR7joEQEW1bKq3a3yUZSObOoWLFQ4ohg==
