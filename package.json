@@ -1,6 +1,6 @@
 {
   "name": "@adfinis-sygroup/semantic-release-config",
-  "version": "2.1.4",
+  "version": "3.0.0",
   "description": "Shared semantic release configuration for Adfinis SyGroup projects",
   "main": "release.config.js",
   "repository": "git@github.com:adfinis-sygroup/semantic-release-config.git",

@@ -1,3 +1,13 @@
+# [3.0.0](https://github.com/adfinis-sygroup/semantic-release-config/compare/v2.1.4...v3.0.0) (2020-11-03)
+
+
+* chore!: update packages ([0dafbde](https://github.com/adfinis-sygroup/semantic-release-config/commit/0dafbde))
+
+
+### BREAKING CHANGES
+
+* Drop support for node versions under 10
+
 ## [2.1.4](https://github.com/adfinis-sygroup/semantic-release-config/compare/v2.1.3...v2.1.4) (2019-08-06)
 
 
