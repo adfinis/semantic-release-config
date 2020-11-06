@@ -1,3 +1,11 @@
+## [3.0.1](https://github.com/adfinis-sygroup/semantic-release-config/compare/v3.0.0...v3.0.1) (2020-11-06)
+
+
+### Bug Fixes
+
+* add master to branches config ([cac591c](https://github.com/adfinis-sygroup/semantic-release-config/commit/cac591c))
+* use new syntax for release branch config ([#148](https://github.com/adfinis-sygroup/semantic-release-config/issues/148)) ([d38773f](https://github.com/adfinis-sygroup/semantic-release-config/commit/d38773f))
+
 # [3.0.0](https://github.com/adfinis-sygroup/semantic-release-config/compare/v2.1.4...v3.0.0) (2020-11-03)
 
 
