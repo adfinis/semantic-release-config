@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/adfinis-sygroup/semantic-release-config/compare/v3.0.1...v3.1.0) (2020-11-24)
+
+
+### Features
+
+* **config:** Release from github actions and add main branch to publish branches ([8a55ce7](https://github.com/adfinis-sygroup/semantic-release-config/commit/8a55ce7))
+
 ## [3.0.1](https://github.com/adfinis-sygroup/semantic-release-config/compare/v3.0.0...v3.0.1) (2020-11-06)
 
 
