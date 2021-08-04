@@ -1,6 +1,6 @@
 [![npm version](https://badge.fury.io/js/%40adfinis-sygroup%2Fsemantic-release-config.svg)](https://badge.fury.io/js/%40adfinis-sygroup%2Fsemantic-release-config)
 
-# semantic-release-config
+# @adfinis-sygroup/semantic-release-config
 
 Sharable configuration for [semantic release](https://semantic-release.gitbook.io).
 
@@ -8,8 +8,7 @@ Sharable configuration for [semantic release](https://semantic-release.gitbook.i
 
 Currently, this config is only a slight modification of the default config:
 
-- Deploy from `release` branch instead of `master`
-- Add [@semantic-release/git](https://github.com/semantic-release/git) plugin to publish updated `package.json` to repository after deployment
+- Add [@semantic-release/git](https://github.com/semantic-release/git) plugin to publish updated `package.json` and `CHANGELOG.md` to repository after deployment
 
 ## Installation
 
@@ -43,14 +42,27 @@ Set up a pre-commit hook to integrate it; e.g. by installing [husky](https://git
 yarn add husky --dev
 ```
 
-and adding the following section to `package.json`:
+then adding the following to `package.json`:
 
 ```json
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
+{
+  "scripts": {
+    "prepare": "husky install"
+  }
+}
+```
+
+and adding the following script (with execute permissions) to `.husky/pre-commit`:
+
+```bash
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# skip in CI
+[ -n "$CI" ] && exit 0
+
+# lint commit message
+yarn commitlint --edit $1
 ```
 
 ## CI Configuration
@@ -58,19 +70,32 @@ and adding the following section to `package.json`:
 - Add credentials for GitHub and npm as described [here](https://semantic-release.gitbook.io/semantic-release/usage/ci-configuration)
 - Run semantic-release in the deploy stage as described [here](https://semantic-release.gitbook.io/semantic-release/recipes/recipes/travis)
 
-Example:
+Example for a release Github workflow:
 
 ```yml
+name: Release
+
+on: workflow_dispatch
+
 jobs:
-  include:
-    - stage: release
-      if: branch = release and type = push
-      node_js: lts/*
-      deploy:
-        provider: script
-        skip_cleanup: true
-        script:
-          - yarn semantic-release --branch release
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v2
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Release on NPM
+        run: yarn semantic-release
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 ```
 
 ## Commitizen
