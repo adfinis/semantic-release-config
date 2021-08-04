@@ -1,13 +1,13 @@
 {
   "name": "@adfinis-sygroup/semantic-release-config",
   "version": "3.1.0",
-  "description": "Shared semantic release configuration for Adfinis SyGroup projects",
+  "description": "Shared semantic release configuration for Adfinis projects",
   "main": "release.config.js",
-  "repository": "git@github.com:adfinis-sygroup/semantic-release-config.git",
-  "author": "Christian Zosel <christian@zosel.ch>",
-  "license": "MIT",
+  "author": "Adfinis AG <info@adfinis.com>",
+  "repository": "github:adfinis-sygroup/semantic-release-config",
+  "license": "LGPL-3.0-or-later",
   "scripts": {
-    "test": "echo 'no tests'",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
   "dependencies": {
