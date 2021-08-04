@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/adfinis-sygroup/semantic-release-config/compare/v3.1.0...v3.2.0) (2021-08-04)
+
+
+### Features
+
+* update dependencies and move commitlint to dev dependencies ([eb95d40](https://github.com/adfinis-sygroup/semantic-release-config/commit/eb95d40f9546fba08f4a9265a47c030f3701d062))
+
 # [3.1.0](https://github.com/adfinis-sygroup/semantic-release-config/compare/v3.0.1...v3.1.0) (2020-11-24)
 
 
