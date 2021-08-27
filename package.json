@@ -22,7 +22,7 @@
     "semantic-release": "17.4.4"
   },
   "devDependencies": {
-    "husky": "^7.0.1"
+    "husky": "^7.0.2"
   },
   "commitlint": {
     "extends": [
