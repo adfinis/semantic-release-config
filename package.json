@@ -1,6 +1,6 @@
 {
   "name": "@adfinis-sygroup/semantic-release-config",
-  "version": "3.2.1",
+  "version": "3.3.0",
   "description": "Shared semantic release configuration for Adfinis projects",
   "main": "release.config.js",
   "author": "Adfinis AG <info@adfinis.com>",
