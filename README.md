@@ -1,6 +1,6 @@
-[![npm version](https://badge.fury.io/js/%40adfinis-sygroup%2Fsemantic-release-config.svg)](https://badge.fury.io/js/%40adfinis-sygroup%2Fsemantic-release-config)
+[![npm version](https://badge.fury.io/js/%40adfinis%2Fsemantic-release-config.svg)](https://badge.fury.io/js/%40adfinis%2Fsemantic-release-config)
 
-# @adfinis-sygroup/semantic-release-config
+# @adfinis/semantic-release-config
 
 Sharable configuration for [semantic release](https://semantic-release.gitbook.io).
 
@@ -15,14 +15,14 @@ Currently, this config is only a slight modification of the default config:
 Install the npm package
 
 ```bash
-yarn add --dev @adfinis-sygroup/semantic-release-config
+yarn add --dev @adfinis/semantic-release-config
 ```
 
 and add the following to the `extends` property of your [semantic release configuration](https://semantic-release.gitbook.io/semantic-release/usage/configuration#configuration-file):
 
 ```json
 {
-  "extends": "@adfinis-sygroup/semantic-release-config"
+  "extends": "@adfinis/semantic-release-config"
 }
 ```
 
