@@ -1,10 +1,13 @@
 {
-  "name": "@adfinis-sygroup/semantic-release-config",
+  "name": "@adfinis/semantic-release-config",
   "version": "3.4.0",
   "description": "Shared semantic release configuration for Adfinis projects",
   "main": "release.config.js",
   "author": "Adfinis AG <info@adfinis.com>",
-  "repository": "github:adfinis-sygroup/semantic-release-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adfinis/semantic-release-config"
+  },
   "license": "LGPL-3.0-or-later",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
