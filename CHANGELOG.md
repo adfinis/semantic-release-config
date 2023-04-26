@@ -1,3 +1,19 @@
+# [4.0.0](https://github.com/adfinis/semantic-release-config/compare/v3.4.0...v4.0.0) (2023-04-26)
+
+
+### chore
+
+* **deps:** update dependencies ([534b2bb](https://github.com/adfinis/semantic-release-config/commit/534b2bb764b2ffdf3918208925febaf5f2143687))
+* rename to @adfinis/semantic-release-config ([9f18c9e](https://github.com/adfinis/semantic-release-config/commit/9f18c9e8ac0cea9a9f8e31dc0235edf7fa0e4532))
+
+
+### BREAKING CHANGES
+
+* This package was renamed from
+`@adfinis-sygroup/semantic-release-config` to
+`@adfinis/semantic-release-config`
+* **deps:** Remove support for Node < v18.
+
 # [3.4.0](https://github.com/adfinis-sygroup/semantic-release-config/compare/v3.3.0...v3.4.0) (2022-01-12)
 
 
