@@ -22,7 +22,7 @@
     "@semantic-release/github": "^8.0.7",
     "@semantic-release/npm": "^10.0.3",
     "@semantic-release/release-notes-generator": "^11.0.7",
-    "semantic-release": "^21.1.1"
+    "semantic-release": "^22.0.5"
   },
   "devDependencies": {
     "husky": "8.0.3"
