@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/adfinis/semantic-release-config/compare/v4.0.0...v4.1.0) (2023-10-03)
+
+
+### Features
+
+* update semantic-release ([7b53ede](https://github.com/adfinis/semantic-release-config/commit/7b53edee2a3073443d4a7d9d8984b4fba4d09421))
+
 # [4.0.0](https://github.com/adfinis/semantic-release-config/compare/v3.4.0...v4.0.0) (2023-04-26)
 
 
