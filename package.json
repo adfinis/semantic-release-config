@@ -2,7 +2,7 @@
   "name": "@adfinis/semantic-release-config",
   "version": "4.1.0",
   "description": "Shared semantic release configuration for Adfinis projects",
-  "main": "release.config.js",
+  "main": ".releaserc.js",
   "author": "Adfinis AG <info@adfinis.com>",
   "repository": {
     "type": "git",
@@ -11,24 +11,24 @@
   "license": "LGPL-3.0-or-later",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
-    "@commitlint/cli": "^18.4.3",
-    "@commitlint/config-conventional": "^18.4.3",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/commit-analyzer": "^13.0.0",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^9.2.5",
-    "@semantic-release/npm": "^11.0.2",
-    "@semantic-release/release-notes-generator": "^12.1.0",
-    "semantic-release": "^22.0.12"
+    "@semantic-release/github": "^10.0.6",
+    "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.0",
+    "semantic-release": "^24.0.0"
   },
   "devDependencies": {
-    "husky": "8.0.3"
+    "husky": "9.0.11"
   },
   "engines": {
-    "node": ">= 18"
+    "node": ">= 20"
   },
   "commitlint": {
     "extends": [

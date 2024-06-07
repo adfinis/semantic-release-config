@@ -26,17 +26,13 @@ and add the following to the `extends` property of your [semantic release config
 }
 ```
 
-This repo also contains [commitlint](https://github.com/conventional-changelog/commitlint). Configure it to check that commit messagesas are formatted according to the [conventional commit format](https://www.conventionalcommits.org) by adding the following to `package.json`:
-
-```json
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  }
+This repo also contains [commitlint](https://github.com/conventional-changelog/commitlint). Configure it to check that commit messagesas are formatted according to the [conventional commit format](https://www.conventionalcommits.org) by adding the following:
+Create the file `commitlint.config.js` with:
+```js
+export default { extends: ['@commitlint/config-conventional'] };
 ```
 
-Set up a pre-commit hook to integrate it; e.g. by installing [husky](https://github.com/typicode/husky):
+Set up a hook to integrate it; e.g. by installing [husky](https://github.com/typicode/husky):
 
 ```bash
 yarn add husky --dev
@@ -47,17 +43,14 @@ then adding the following to `package.json`:
 ```json
 {
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky"
   }
 }
 ```
 
-and adding the following script (with execute permissions) to `.husky/pre-commit`:
+and adding the following script (with execute permissions) to `.husky/commit-msg`:
 
 ```bash
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
 # skip in CI
 [ -n "$CI" ] && exit 0
 
