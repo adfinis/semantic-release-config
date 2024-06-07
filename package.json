@@ -1,6 +1,6 @@
 {
   "name": "@adfinis/semantic-release-config",
-  "version": "4.1.0",
+  "version": "5.0.0",
   "description": "Shared semantic release configuration for Adfinis projects",
   "main": ".releaserc.js",
   "author": "Adfinis AG <info@adfinis.com>",

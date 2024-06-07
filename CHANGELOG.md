@@ -1,3 +1,13 @@
+# [5.0.0](https://github.com/adfinis/semantic-release-config/compare/v4.1.0...v5.0.0) (2024-06-07)
+
+
+* fix(deps)!: upgrade dependencies ([#380](https://github.com/adfinis/semantic-release-config/issues/380)) ([5057b60](https://github.com/adfinis/semantic-release-config/commit/5057b600352b92fdda87841932e5c182fdef488d))
+
+
+### BREAKING CHANGES
+
+* semantic release >= 23 required node >= 20
+
 # [4.1.0](https://github.com/adfinis/semantic-release-config/compare/v4.0.0...v4.1.0) (2023-10-03)
 
 
