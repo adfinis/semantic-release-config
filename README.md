@@ -2,13 +2,16 @@
 
 # @adfinis/semantic-release-config
 
-Sharable configuration for [semantic release](https://semantic-release.gitbook.io).
+Sharable configuration for
+[semantic release](https://semantic-release.gitbook.io).
 
 ## Features
 
 Currently, this config is only a slight modification of the default config:
 
-- Add [@semantic-release/git](https://github.com/semantic-release/git) plugin to publish updated `package.json` and `CHANGELOG.md` to repository after deployment
+- Add [@semantic-release/git](https://github.com/semantic-release/git) plugin to
+  publish updated `package.json` and `CHANGELOG.md` to repository after
+  deployment
 
 ## Installation
 
@@ -18,7 +21,8 @@ Install the npm package
 yarn add --dev @adfinis/semantic-release-config
 ```
 
-and add the following to the `extends` property of your [semantic release configuration](https://semantic-release.gitbook.io/semantic-release/usage/configuration#configuration-file):
+and add the following to the `extends` property of your
+[semantic release configuration](https://semantic-release.gitbook.io/semantic-release/usage/configuration#configuration-file):
 
 ```json
 {
@@ -26,13 +30,18 @@ and add the following to the `extends` property of your [semantic release config
 }
 ```
 
-This repo also contains [commitlint](https://github.com/conventional-changelog/commitlint). Configure it to check that commit messagesas are formatted according to the [conventional commit format](https://www.conventionalcommits.org) by adding the following:
-Create the file `commitlint.config.js` with:
+This repo also contains
+[commitlint](https://github.com/conventional-changelog/commitlint). Configure it
+to check that commit messagesas are formatted according to the
+[conventional commit format](https://www.conventionalcommits.org) by adding the
+following: Create the file `commitlint.config.js` with:
+
 ```js
-export default { extends: ['@commitlint/config-conventional'] };
+export default { extends: ["@commitlint/config-conventional"] };
 ```
 
-Set up a hook to integrate it; e.g. by installing [husky](https://github.com/typicode/husky):
+Set up a hook to integrate it; e.g. by installing
+[husky](https://github.com/typicode/husky):
 
 ```bash
 yarn add husky --dev
@@ -48,7 +57,8 @@ then adding the following to `package.json`:
 }
 ```
 
-and adding the following script (with execute permissions) to `.husky/commit-msg`:
+and adding the following script (with execute permissions) to
+`.husky/commit-msg`:
 
 ```bash
 # skip in CI
@@ -60,8 +70,10 @@ yarn commitlint --edit $1
 
 ## CI Configuration
 
-- Add credentials for GitHub and npm as described [here](https://semantic-release.gitbook.io/semantic-release/usage/ci-configuration)
-- Run semantic-release in the deploy stage as described [here](https://semantic-release.gitbook.io/semantic-release/recipes/recipes/travis)
+- Add credentials for GitHub and npm as described
+  [here](https://semantic-release.gitbook.io/semantic-release/usage/ci-configuration)
+- Run semantic-release in the deploy stage as described
+  [here](https://semantic-release.gitbook.io/semantic-release/recipes/recipes/travis)
 
 Example for a release Github workflow:
 
@@ -81,7 +93,7 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 24
           cache: "yarn"
 
       - name: Install dependencies
@@ -96,7 +108,9 @@ jobs:
 
 ## Commitizen
 
-Optionally, you can also set up [commitizen](https://github.com/commitizen/cz-cli) for a more interactive way of adding commits:
+Optionally, you can also set up
+[commitizen](https://github.com/commitizen/cz-cli) for a more interactive way of
+adding commits:
 
 ```
 $ git cz
