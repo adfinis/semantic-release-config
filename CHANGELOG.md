@@ -1,3 +1,15 @@
+# [6.0.0](https://github.com/adfinis/semantic-release-config/compare/v5.0.0...v6.0.0) (2026-03-26)
+
+
+### Features
+
+* raise minimum node version to v24.10 ([fd68e5a](https://github.com/adfinis/semantic-release-config/commit/fd68e5ac7edac79f7e2324379afc555bc4d4ff74))
+
+
+### BREAKING CHANGES
+
+* minimum node version v24.10
+
 # [5.0.0](https://github.com/adfinis/semantic-release-config/compare/v4.1.0...v5.0.0) (2024-06-07)
 
 
